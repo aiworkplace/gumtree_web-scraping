@@ -33,14 +33,8 @@ for i in range(len(header)):
 if __name__ == '__main__':
 
     options = webdriver.ChromeOptions()
-    # options.add_argument('proxy-server=106.122.8.54:3128')
-    # options.add_argument(r'--user-data-dir=C:\Users\Arvan\AppData\Local\Google\Chrome\User Data\Default')
-
     options.add_argument('--user-data-dir=C:/Users/winName/AppData/Local/Google/Chrome/User Data')
     options.add_argument('--profile-directory=Profile 12')
-
-    # options.add_argument(r'--user-data-dir=C:\Users\Arvan\AppData\Local\Google\Chrome\User Data\Profile 5')
-    # options.add_arguments={'user-data-dir': 'C:\Users\Arvan\AppData\Local\Google\Chrome\User Data\Profile 5'}
 
     browser = uc.Chrome(
         options=options,
